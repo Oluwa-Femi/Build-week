@@ -147,16 +147,31 @@ nav-search input {
     font-size: 1.3em;
     line-height: 1.6;
  }
- .register{
+ .recommendations1 {
     display: flex;
-    flex-direction: column;
-    width: 70%;
-    padding-left: 15vw;
-    padding-left: 15vw;
-    padding-bottom: 2vw;
- }
- 
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .recommendations1 img {
+    margin: 15px;
+    transition: all 2s;
+   }
+   .recommendations1 img:hover {
+    transform: scale (1.1);
+   }
 
+   .recommendations2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .recommendations2 img {
+    margin: 15px;
+    transition: all 2s;
+   }
+   .recommendations2 img:hover {
+    transform: scale (1.1);
+   }
  footer{
     background-color: black;
     color: aliceblue;
