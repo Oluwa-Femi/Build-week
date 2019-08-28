@@ -52,28 +52,27 @@ nav-search{
 }
 nav-search input {
     height: 30px;
-    background-image: url('./images/searchicon.png');
     background-repeat: no-repeat;
     padding-left: 40px;
     border-radius: 9999em;
     background: linear-gradient(21deg, #10abff, #1beabd);
 }
 .categories{
-    background: #A9A9A9;
+    background: #ADD8E6;
     padding-left: 100px;
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 .categories a {
-    color: #3F2BC0;    
+    color: white;    
     margin: 11px;
     text-decoration: none;
     font-weight: bold;
 }
 .categories a:hover {
     height: 2rem;
-    background-color: white;
+    background-color: #87ceeb;
 }
 .hero {
     position: relative;
@@ -126,7 +125,7 @@ nav-search input {
     border-radius: 20px;
  }
  .hero-button:hover {
-    background-color: #0000FF;
+    background-color: #10abff;
     border: 1px solid #3F2BC0;
  }
  .about {
@@ -148,6 +147,17 @@ nav-search input {
     font-size: 1.3em;
     line-height: 1.6;
  }
- .recommendations{
+ .register{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    padding-left: 15vw;
+    padding-left: 15vw;
+    padding-bottom: 2vw;
+ }
+ 
 
+ footer{
+    background-color: black;
+    color: aliceblue;
  }
