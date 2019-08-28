@@ -129,3 +129,25 @@ nav-search input {
     background-color: #0000FF;
     border: 1px solid #3F2BC0;
  }
+ .about {
+    width: 70%;
+    padding-left: 15vw;
+    padding-left: 15vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+ }
+ .about h1 {
+    color: #0000FF;
+    font-size: 2rem;
+    text-align: center;
+ }
+ .about p{
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-size: 1.3em;
+    line-height: 1.6;
+ }
+ .recommendations{
+
+ }
