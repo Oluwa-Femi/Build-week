@@ -45,7 +45,7 @@ header {
 @media (max-width:500px){
     header{
         width: 90%;
-        height: 70vh;
+        height: 80vh;
     }
 }
 nav{
@@ -97,13 +97,13 @@ nav-logo{
 @media (max-width:500px){
     nav-logo{
         padding-top: 30vh;
-        padding-left: 30vh;
+        text-align: center;
     }
 }
 @media (max-width:375px){
     nav-logo{
         padding-top: 30vh;
-        padding-left: 20vh;
+        text-align: center;
     }
 }
 nav-menu{
@@ -435,9 +435,14 @@ nav-search input {
     cursor: pointer;
     border-radius: 20px;
  }
- .banner-button:hover {
-    background-color: #10abff;
-    border: 1px solid #3F2BC0;
+ @media (max-width:500px){
+    nav-logo{
+        padding-top: 30vh;
+        padding-left: 30vh;
+    }
+}
+.banner-button {
+    margin-top: 1rem;    
  }
 .register{
     width: 60vw;
@@ -458,7 +463,7 @@ nav-search input {
  /* Full-width input fields */
 input[type=text], input[type=password] {
     color: #3F2BC0;
-    width: 98%;
+    width: 90%;
     padding: 15px;
     margin: 5px 0 22px 0;
     display: inline-block;
