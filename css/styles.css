@@ -18,6 +18,13 @@ body {
         padding:0;
     }
 }
+@media (max-width:500px){
+    body{
+        max-width:100%;
+        margin: 0;
+        padding:0;
+    }
+}
 #container {
     display: flex;
     flex-direction: column;
@@ -29,9 +36,21 @@ header {
     flex-direction: column;
     padding-bottom: 20px;
 }
+@media (max-width:1000px){
+    header{
+        width: 90%;
+        height: 20vh;
+    }
+}
+@media (max-width:500px){
+    header{
+        width: 90%;
+        height: 70vh;
+    }
+}
 nav{
     height: 60%;
-    width: 80%;
+    width: 90%;
     padding: 20px;
     display: flex;
     flex-direction: row;
@@ -47,14 +66,22 @@ nav{
         width: 90%; 
     }
 }
+@media (max-width:500px){
+    nav{
+        width: 90%; 
+        display: flex;
+    flex-direction: column;
+}
+}
 nav-logo{
-    padding-left: 30px;
+    padding-left: 100px;
     display: flex;
     align-items: flex-start;
 }
 @media (max-width:1000px){
     nav-logo{
         /* padding-top: 10vh; */
+        padding-left: 15vw;
         display: flex;
     align-items: flex-start;
     }
@@ -62,9 +89,15 @@ nav-logo{
 @media (max-width:800px){
     nav-logo{
         /* padding-top: 10vh; */
-        padding-left: 5vw;
+        padding-left: 10vw;
         display: flex;
     align-items: flex-start;
+    }
+}
+@media (max-width:500px){
+    nav-logo{
+        padding-top: 20px;
+        padding-left: 12vh;
     }
 }
 nav-menu{
@@ -77,28 +110,44 @@ nav-menu{
 @media (max-width:1000px){
     nav-menu{
         padding-left: -10px;
-
         /* padding-bottom: 50px; */
     }
 }
 @media (max-width:800px){
     nav-menu{
         padding-left: 10px;
-
-        /* padding-bottom: 50px; */
+    }
+}
+@media (max-width:500px){
+    nav-menu{
+        border-bottom: 1px black;
+        display:flex;
+        flex-direction: column; 
+        order: 2;
     }
 }
 nav-menu a {
-    color: #3F2BC0;    
+    color: #3F2BC0; 
+    padding:10px;   
     margin: 10px;
     text-decoration: none;
     font-weight: bold;
 }
 @media (max-width:1000px){
     nav-menu a{
-        margin: 20px;
+        margin: 10px;
         text-decoration: none;
     font-weight: bold;
+
+        /* padding-bottom: 50px; */
+    }
+}
+@media (max-width:500px){
+    nav-menu a{
+        margin: 8px;
+        text-decoration: none;
+    font-weight: bold;
+    border-bottom: 1px solid blue;
 
         /* padding-bottom: 50px; */
     }
@@ -154,6 +203,11 @@ nav-search input {
     justify-content: center;
     align-items: center;
  }
+ /* @media (max-width:500px){
+    .hero{
+        margin-top: 50vh;
+    }
+} */
  .hero::before {
     content: "";
     position: absolute;
