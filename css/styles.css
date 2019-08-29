@@ -58,7 +58,7 @@ nav-search input {
     background: linear-gradient(21deg, #10abff, #1beabd);
 }
 .categories{
-    background: #ADD8E6;
+    background: #5383d3;
     padding-left: 100px;
     display: flex;
     flex-direction: row;
@@ -72,7 +72,7 @@ nav-search input {
 }
 .categories a:hover {
     height: 2rem;
-    background-color: #87ceeb;
+    background-color: black;
 }
 .hero {
     position: relative;
@@ -236,6 +236,84 @@ nav-search input {
     background-color: #10abff;
     border: 1px solid #3F2BC0;
  }
+.register{
+    width: 60vw;
+    display: flex;
+    padding-left: 20vw;
+}
+.register .container h1 {
+    color: #3F2BC0;
+    font-size: 2rem;
+    text-align: center;
+    padding: 10px;
+}
+.register .container p{
+    color: #3F2BC0;
+    font-size: 1.4rem;
+    text-align: center;
+}
+ /* Full-width input fields */
+input[type=text], input[type=password] {
+    color: #3F2BC0;
+    width: 98%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+  }
+  
+  input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+  }
+  
+  /* Set a style for all buttons */
+  button {
+    background-color: #10abff;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+  }
+  
+  button:hover {
+    opacity:1;
+  }
+  
+  /* Extra styles for the cancel button */
+  .cancelbtn {
+    padding: 14px 20px;
+    background-color: #f44336;
+  }
+  
+  /* Float cancel and signup buttons and add an equal width */
+  .cancelbtn, .signupbtn {
+    float: left;
+    width: 50%;
+  }
+  
+  /* Add padding to container elements */
+  .container {
+    padding: 16px;
+  }
+  
+  /* Clear floats */
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+
  footer{
     background-color: black;
  }
