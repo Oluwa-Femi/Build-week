@@ -4,6 +4,20 @@ body {
     margin: 0;
     padding: 0;
 }
+@media (max-width:1000px){
+    body{
+        max-width:100%;
+        margin: 0;
+        padding:0;
+    }
+}
+@media (max-width:800px){
+    body{
+        max-width:100%;
+        margin: 0;
+        padding:0;
+    }
+}
 #container {
     display: flex;
     flex-direction: column;
@@ -23,10 +37,27 @@ nav{
     flex-direction: row;
     justify-content: center;
 }
+@media (max-width:1000px){
+    nav{
+        width: 90%; 
+    }
+}
+@media (max-width:800px){
+    nav{
+        width: 90%; 
+    }
+}
 nav-logo{
     padding-left: 30px;
     display: flex;
     align-items: flex-start;
+}
+@media (max-width:1000px){
+    nav-logo{
+        /* padding-top: 10vh; */
+        display: flex;
+    align-items: flex-start;
+    }
 }
 nav-menu{
     padding-left: 100px;
@@ -35,11 +66,27 @@ nav-menu{
     justify-content: space-between;
     align-items: center;
 }
+@media (max-width:1000px){
+    nav-menu{
+        padding-left: 180px;
+
+        /* padding-bottom: 50px; */
+    }
+}
 nav-menu a {
     color: #3F2BC0;    
     margin: 10px;
     text-decoration: none;
     font-weight: bold;
+}
+@media (max-width:1000px){
+    nav-menu a{
+        margin: 20px;
+        text-decoration: none;
+    font-weight: bold;
+
+        /* padding-bottom: 50px; */
+    }
 }
 nav-menu a:hover {
     height: 2rem;
@@ -49,6 +96,11 @@ nav-search{
     padding-left: 80px;
     display: flex;
     align-items: center;
+}
+@media (max-width:1000px){
+    nav-search{
+        display: none;
+    }
 }
 nav-search input {
     height: 30px;
@@ -63,6 +115,11 @@ nav-search input {
     display: flex;
     flex-direction: row;
     align-items: center;
+}
+@media (max-width:1000px){
+    .categories{
+        display: none;
+    }
 }
 .categories a {
     color: white;    
