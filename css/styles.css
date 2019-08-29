@@ -31,7 +31,7 @@ header {
 }
 nav{
     height: 60%;
-    width: 90%;
+    width: 80%;
     padding: 20px;
     display: flex;
     flex-direction: row;
@@ -59,6 +59,14 @@ nav-logo{
     align-items: flex-start;
     }
 }
+@media (max-width:800px){
+    nav-logo{
+        /* padding-top: 10vh; */
+        padding-left: 5vw;
+        display: flex;
+    align-items: flex-start;
+    }
+}
 nav-menu{
     padding-left: 100px;
     display: flex;
@@ -68,7 +76,14 @@ nav-menu{
 }
 @media (max-width:1000px){
     nav-menu{
-        padding-left: 180px;
+        padding-left: -10px;
+
+        /* padding-bottom: 50px; */
+    }
+}
+@media (max-width:800px){
+    nav-menu{
+        padding-left: 10px;
 
         /* padding-bottom: 50px; */
     }
@@ -338,8 +353,9 @@ nav-search input {
     margin: 0.625rem;
  }
  .banner-title {
-    font-size: 3rem;
-    font-weight: 600;
+     padding-top: 20px;
+    font-size: 2rem;
+    font-weight: 400;
     margin-bottom: 0;
  }
  .banner-subtitle {
@@ -351,7 +367,7 @@ nav-search input {
     width: 200px;
     height: 40px;
     border: 1px solid #0000FF;
-    margin-top: 5rem;
+    margin-top: 3rem;
     padding: 0.9375rem1.875rem;
     font-family: "Monserrat", sans-serif;
     font-size: 1.125rem;
