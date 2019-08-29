@@ -96,8 +96,14 @@ nav-logo{
 }
 @media (max-width:500px){
     nav-logo{
-        padding-top: 20px;
-        padding-left: 12vh;
+        padding-top: 30vh;
+        padding-left: 30vh;
+    }
+}
+@media (max-width:375px){
+    nav-logo{
+        padding-top: 30vh;
+        padding-left: 20vh;
     }
 }
 nav-menu{
