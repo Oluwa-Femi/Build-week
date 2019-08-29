@@ -45,7 +45,7 @@ header {
 @media (max-width:500px){
     header{
         width: 90%;
-        height: 80vh;
+        height:70vh;
     }
 }
 nav{
@@ -96,14 +96,17 @@ nav-logo{
 }
 @media (max-width:500px){
     nav-logo{
-        padding-top: 30vh;
-        text-align: center;
+        padding-left: 10vh;
+        padding-top: 10vh;
+        display: flex;
     }
 }
 @media (max-width:375px){
     nav-logo{
-        padding-top: 30vh;
-        text-align: center;
+        padding-top: 10vh;
+        justify-content: center;
+        align-content: center;
+        
     }
 }
 nav-menu{
@@ -303,6 +306,14 @@ nav-search input {
     margin-bottom: 20px;
     padding: 20px 0px 20px 0px;
 }
+@media (max-width:500px){
+    .container1{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+    }
+}
 .container1 header {
     display:flex;
     flex-direction: row;
@@ -329,6 +340,14 @@ nav-search input {
     justify-content: space-evenly;
     margin-bottom: 20px;
     padding: 20px 0px 20px 0px;
+}
+@media (max-width:500px){
+    .container2{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+    }
 }
 .container2 header {
     display:flex;
