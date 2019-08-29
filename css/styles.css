@@ -130,6 +130,7 @@ nav-search input {
  }
  .about {
     width: 70%;
+    padding-top: 20px;
     padding-left: 15vw;
     padding-left: 15vw;
     display: flex;
@@ -147,6 +148,68 @@ nav-search input {
     font-size: 1.3em;
     line-height: 1.6;
  }
+ .team {
+    width: 70%;
+    padding-top: 20px;
+    padding-left: 15vw;
+    padding-left: 15vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+ }
+ .container1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+    padding: 20px 0px 20px 0px;
+}
+.container1 header {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.container1 .container-strategy {
+    width: 48%;
+    padding: 0 1%;
+    padding-bottom: 20px;  
+    border-bottom: 1px solid black;
+}
+.container1 .container-strategy h2 {
+    font-size: 1.6rem;
+    color: #5383d3;
+}
+.container1 .container-strategy p {
+    font-size: 1.2rem;
+    color: #5383d3;
+}
+.container2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+    padding: 20px 0px 20px 0px;
+}
+.container2 header {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.container2 .container-strategy {
+    width: 48%;
+    padding: 0 1%;
+    padding-bottom: 20px;
+}
+.container2 .container-strategy h2 {
+    font-size: 1.6rem;
+    color: #5383d3;
+}
+.container2 .container-strategy p {
+    font-size: 1.2rem;
+    color: #5383d3;
+}
  .recommendations {
     display: flex;
     flex-direction: column;
