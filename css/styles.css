@@ -157,6 +157,13 @@ nav-search input {
     flex-direction: column;
     justify-content: center;
  }
+
+.team h1 {
+    font-size: 2rem;
+    color: #0000FF;
+    text-align: center;
+    padding-bottom: 2vh;
+}
  .container1 {
     display: flex;
     flex-wrap: wrap;
