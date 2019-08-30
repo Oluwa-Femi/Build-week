@@ -131,8 +131,7 @@ nav-menu{
     nav-menu{
         border-bottom: 1px black;
         display:flex;
-        flex-direction: column; 
-        order: 2;
+        flex-direction: column;
     }
 }
 nav-menu a {
