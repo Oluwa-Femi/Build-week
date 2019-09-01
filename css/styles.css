@@ -4,6 +4,27 @@ body {
     margin: 0;
     padding: 0;
 }
+@media (max-width:1000px){
+    body{
+        max-width:100%;
+        margin: 0;
+        padding:0;
+    }
+}
+@media (max-width:800px){
+    body{
+        max-width:100%;
+        margin: 0;
+        padding:0;
+    }
+}
+@media (max-width:500px){
+    body{
+        max-width:100%;
+        margin: 0;
+        padding:0;
+    }
+}
 #container {
     display: flex;
     flex-direction: column;
@@ -15,6 +36,18 @@ header {
     flex-direction: column;
     padding-bottom: 20px;
 }
+@media (max-width:1000px){
+    header{
+        width: 90%;
+        height: 20vh;
+    }
+}
+@media (max-width:500px){
+    header{
+        width: 90%;
+        height:70vh;
+    }
+}
 nav{
     height: 60%;
     width: 90%;
@@ -23,10 +56,58 @@ nav{
     flex-direction: row;
     justify-content: center;
 }
+@media (max-width:1000px){
+    nav{
+        width: 90%; 
+    }
+}
+@media (max-width:800px){
+    nav{
+        width: 90%; 
+    }
+}
+@media (max-width:500px){
+    nav{
+        width: 90%; 
+        display: flex;
+    flex-direction: column;
+}
+}
 nav-logo{
-    padding-left: 30px;
+    padding-left: 100px;
     display: flex;
     align-items: flex-start;
+}
+@media (max-width:1000px){
+    nav-logo{
+        /* padding-top: 10vh; */
+        padding-left: 15vw;
+        display: flex;
+    align-items: flex-start;
+    }
+}
+@media (max-width:800px){
+    nav-logo{
+        /* padding-top: 10vh; */
+        padding-left: 10vw;
+        display: flex;
+    align-items: flex-start;
+    }
+}
+@media (max-width:500px){
+    nav-logo{
+        padding-left: 10vh;
+        padding-top: 10vh;
+        display: flex;
+    }
+}
+@media (max-width:375px){
+    nav-logo{
+        padding-top: 10vh;
+        justify-content: center;
+        align-content: center;
+        
+    }
 }
 nav-menu{
     padding-left: 100px;
@@ -35,11 +116,50 @@ nav-menu{
     justify-content: space-between;
     align-items: center;
 }
+@media (max-width:1000px){
+    nav-menu{
+        padding-left: -10px;
+        /* padding-bottom: 50px; */
+    }
+}
+@media (max-width:800px){
+    nav-menu{
+        padding-left: 10px;
+    }
+}
+@media (max-width:500px){
+    nav-menu{
+        border-bottom: 1px black;
+        display:flex;
+        flex-direction: column; 
+        order: 2;
+    }
+}
 nav-menu a {
-    color: #3F2BC0;    
+    color: #3F2BC0; 
+    padding:10px;   
     margin: 10px;
     text-decoration: none;
     font-weight: bold;
+}
+@media (max-width:1000px){
+    nav-menu a{
+        margin: 10px;
+        text-decoration: none;
+    font-weight: bold;
+
+        /* padding-bottom: 50px; */
+    }
+}
+@media (max-width:500px){
+    nav-menu a{
+        margin: 8px;
+        text-decoration: none;
+    font-weight: bold;
+    border-bottom: 1px solid blue;
+
+        /* padding-bottom: 50px; */
+    }
 }
 nav-menu a:hover {
     height: 2rem;
@@ -50,6 +170,11 @@ nav-search{
     display: flex;
     align-items: center;
 }
+@media (max-width:1000px){
+    nav-search{
+        display: none;
+    }
+}
 nav-search input {
     height: 30px;
     background-repeat: no-repeat;
@@ -58,11 +183,16 @@ nav-search input {
     background: linear-gradient(21deg, #10abff, #1beabd);
 }
 .categories{
-    background: #ADD8E6;
+    background: #5383d3;
     padding-left: 100px;
     display: flex;
     flex-direction: row;
     align-items: center;
+}
+@media (max-width:1000px){
+    .categories{
+        display: none;
+    }
 }
 .categories a {
     color: white;    
@@ -72,7 +202,7 @@ nav-search input {
 }
 .categories a:hover {
     height: 2rem;
-    background-color: #87ceeb;
+    background-color: black;
 }
 .hero {
     position: relative;
@@ -82,6 +212,11 @@ nav-search input {
     justify-content: center;
     align-items: center;
  }
+ /* @media (max-width:500px){
+    .hero{
+        margin-top: 50vh;
+    }
+} */
  .hero::before {
     content: "";
     position: absolute;
@@ -130,6 +265,7 @@ nav-search input {
  }
  .about {
     width: 70%;
+    padding-top: 20px;
     padding-left: 15vw;
     padding-left: 15vw;
     display: flex;
@@ -147,6 +283,91 @@ nav-search input {
     font-size: 1.3em;
     line-height: 1.6;
  }
+ .team {
+    width: 70%;
+    padding-top: 20px;
+    padding-left: 15vw;
+    padding-left: 15vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+ }
+
+.team h1 {
+    font-size: 2rem;
+    color: #0000FF;
+    text-align: center;
+    padding-bottom: 2vh;
+}
+ .container1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+    padding: 20px 0px 20px 0px;
+}
+@media (max-width:500px){
+    .container1{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+    }
+}
+.container1 header {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.container1 .container-strategy {
+    width: 48%;
+    padding: 0 1%;
+    padding-bottom: 20px;  
+    border-bottom: 1px solid black;
+}
+.container1 .container-strategy h2 {
+    font-size: 1.6rem;
+    color: #5383d3;
+}
+.container1 .container-strategy p {
+    font-size: 1.2rem;
+    color: #5383d3;
+}
+.container2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+    padding: 20px 0px 20px 0px;
+}
+@media (max-width:500px){
+    .container2{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+    }
+}
+.container2 header {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.container2 .container-strategy {
+    width: 48%;
+    padding: 0 1%;
+    padding-bottom: 20px;
+}
+.container2 .container-strategy h2 {
+    font-size: 1.6rem;
+    color: #5383d3;
+}
+.container2 .container-strategy p {
+    font-size: 1.2rem;
+    color: #5383d3;
+}
  .recommendations {
     display: flex;
     flex-direction: column;
@@ -211,8 +432,9 @@ nav-search input {
     margin: 0.625rem;
  }
  .banner-title {
-    font-size: 3rem;
-    font-weight: 600;
+     padding-top: 20px;
+    font-size: 2rem;
+    font-weight: 400;
     margin-bottom: 0;
  }
  .banner-subtitle {
@@ -224,7 +446,7 @@ nav-search input {
     width: 200px;
     height: 40px;
     border: 1px solid #0000FF;
-    margin-top: 5rem;
+    margin-top: 3rem;
     padding: 0.9375rem1.875rem;
     font-family: "Monserrat", sans-serif;
     font-size: 1.125rem;
@@ -232,10 +454,93 @@ nav-search input {
     cursor: pointer;
     border-radius: 20px;
  }
- .banner-button:hover {
-    background-color: #10abff;
-    border: 1px solid #3F2BC0;
+ @media (max-width:500px){
+    nav-logo{
+        padding-top: 30vh;
+        padding-left: 30vh;
+    }
+}
+.banner-button {
+    margin-top: 1rem;    
  }
+.register{
+    width: 60vw;
+    display: flex;
+    padding-left: 20vw;
+}
+.register .container h1 {
+    color: #3F2BC0;
+    font-size: 2rem;
+    text-align: center;
+    padding: 10px;
+}
+.register .container p{
+    color: #3F2BC0;
+    font-size: 1.4rem;
+    text-align: center;
+}
+ /* Full-width input fields */
+input[type=text], input[type=password] {
+    color: #3F2BC0;
+    width: 90%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+  }
+  
+  input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+  }
+  
+  /* Set a style for all buttons */
+  button {
+    background-color: #10abff;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+  }
+  
+  button:hover {
+    opacity:1;
+  }
+  
+  /* Extra styles for the cancel button */
+  .cancelbtn {
+    padding: 14px 20px;
+    background-color: #f44336;
+  }
+  
+  /* Float cancel and signup buttons and add an equal width */
+  .cancelbtn, .signupbtn {
+    float: left;
+    width: 50%;
+  }
+  
+  /* Add padding to container elements */
+  .container {
+    padding: 16px;
+  }
+  
+  /* Clear floats */
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+
  footer{
     background-color: black;
  }
